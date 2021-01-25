@@ -1,0 +1,95 @@
+<div class="container custom-mat-tab-header">
+    <app-header [headerText]= "headerText"></app-header>
+    <mat-accordion>
+        <div class="row mt-4 mb-4">
+            <div class="col-12 custom-padding">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                           Fees
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Labels</th>
+                                        <th>Financing Type</th>
+                                        <th class="text-center" colspan="2">
+                                            <button mat-stroked-button color="primary"><mat-icon>add</mat-icon>Add Dealer Fee</button>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dealer Prep. Fee</td>
+                                        <td>EN: Prep Fee <br>
+                                            FR: Fee du Prep</td>
+                                        <td>
+                                            Finance: $90.00 (New, Used)<br>
+                                            Lease: $90.00 (New)<br>
+                                            Cash: $90.00 (New, Used)
+                                        </td>
+                                        <td class="text-center">
+                                            <button mat-icon-button color="primary">
+                                                <mat-icon>create</mat-icon>
+                                              </button>
+                                              <button mat-icon-button color="warn">
+                                                <mat-icon>delete_forever</mat-icon>
+                                              </button>
+                                        </td>                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>Misc. Fee</td>
+                                        <td>EN: Misc. Fee<br>
+                                            FR: Misc. Fee</td>
+                                        <td>
+                                            Finance: $150.00 (New, Used)<br>
+                                            Lease: $150.00 (New)<br>
+                                            Cash: $150.00 (New, Used)
+                                        </td>
+                                        <td class="text-center">
+                                            <button mat-icon-button color="primary">
+                                                <mat-icon>create</mat-icon>
+                                              </button>
+                                              <button mat-icon-button color="warn">
+                                                <mat-icon>delete_forever</mat-icon>
+                                              </button>
+                                        </td>                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>Documentation Fee</td>
+                                        <td>EN: Doc Fee<br>
+                                            FR: Doc Fee</td>
+                                        <td>
+                                            Finance: $75.00 (New, Used)<br>
+                                            Lease: $75.00 (New)<br>
+                                            Cash: $75.00 (New, Used)
+                                        </td>
+                                        <td class="text-center">
+                                            <button mat-icon-button color="primary">
+                                                <mat-icon>create</mat-icon>
+                                              </button>
+                                              <button mat-icon-button color="warn">
+                                                <mat-icon>delete_forever</mat-icon>
+                                              </button>
+                                        </td>                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   
+                   
+                </mat-expansion-panel>
+            </div>
+
+        </div>
+
+    </mat-accordion>
+</div>
